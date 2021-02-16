@@ -19,7 +19,7 @@ resource "aws_s3_bucket" "data2" {
   # bucket does not have access logs
   # bucket does not have versioning
   bucket = "${local.resource_prefix.value}-data-mor5"
-  acl = "private"
+  acl = "public"
   force_destroy = true
   arn = ""
   tags = {
